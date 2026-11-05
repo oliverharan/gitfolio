@@ -1,0 +1,18 @@
+[
+    {
+      "id": "1",
+      "title": "Alpine Mist",
+      "category": "Landscape",
+      "thumbnail": "/assets/images/thumbs/alpine-thumb.webp",
+      "full": "/assets/images/full/alpine-full.webp",
+      "date": "2026-10"
+    },
+    {
+      "id": "2",
+      "title": "Neon Alley",
+      "category": "Urban",
+      "thumbnail": "/assets/images/thumbs/neon-thumb.webp",
+      "full": "/assets/images/full/neon-full.webp",
+      "date": "2026-09"
+    }
+  ]
