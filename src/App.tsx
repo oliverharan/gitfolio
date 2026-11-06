@@ -10,23 +10,33 @@ function App() {
   return (
     <>
       <section id="center">
-        <div className="hero">
+        <div className="hero-wrapper">
+          <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
+          </div>
+          <h1 className="title first">Oliver</h1>
+          <h1 className="title">Haran</h1>
         </div>
         <div>
-          <h1>Get started</h1>
           <p>
             Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
           </p>
         </div>
         <button
           type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
+          className="resume"
+          onClick={() => {
+            const link = document.createElement('a');
+            link.href = '/assets/docs/Oliver_Haran_Resume_2026.docx';
+            link.download = 'Oliver_Haran_Resume_2026.docx';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          }}
         >
-          Count is {count}
+          Download resume
         </button>
       </section>
 
